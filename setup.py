@@ -200,29 +200,25 @@ class develop(_develop):
 
 setup(
     name="evmjit",
-    version="0.10.0b1",
+    version="0.1",
 
-    description='FFI bindings to libevmjit',
-    url='https://github.com/RomanZacharia/pyevmjit',
-    author=u'Roman Zacharia, Paweł Bylica',
-    author_email='roman.zacharia@gmail.com',
+    description='python bindings to libevmjit',
+    url='https://github.com/gguoss/pyevmjit',
+    author=u'gguoss',
+    author_email='1536310027@qq.com',
     license='MIT',  # FIXME: Can we change to APACHE 2.0?
 
-    setup_requires=['cffi>=1.8.2'],
-    install_requires=['cffi>=1.8.2'],
-
     packages=['evmjit'],
-    cffi_modules=['evmjit_build.py:ffibuilder'],
 
-    # cmdclass={
-    #     'build_clib': build_clib,
-    #     'build_ext': build_ext,
-    #     'develop': develop,
-    #     'egg_info': egg_info,
-    #     'sdist': sdist,
-    #     'bdist_wheel': bdist_wheel
-    # },
-    # distclass=Distribution,
+     cmdclass={
+         'build_clib': build_clib,
+         'build_ext': build_ext,
+         'develop': develop,
+         'egg_info': egg_info,
+         'sdist': sdist,
+         'bdist_wheel': bdist_wheel
+     },
+     distclass=Distribution,
     zip_safe=False,
 
     classifiers=[
