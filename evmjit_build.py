@@ -68,7 +68,7 @@ if 'EVMJIT_INSTALL_PREFIX' in os.environ:
     prefix = os.environ['EVMJIT_INSTALL_PREFIX']
 else:
     # Download and build EVMJIT.
-#    download_tarball(EVMJIT_URL, EVMJIT_SRC_DIR)
+    download_tarball(EVMJIT_URL, EVMJIT_SRC_DIR)
     if (not path.exists(EVMJIT_BUILD_DIR)):
         os.makedirs(EVMJIT_BUILD_DIR)
 
