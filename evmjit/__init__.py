@@ -201,7 +201,7 @@ class EVMJIT:
                                      input,
                                      len(input),
                                      to_uint256be(value))
-        return Result(ret, self.interface.release_result)
+        return Result(ret, self.interface.release)
 
     def set_option(self, name, value):
         return self.interface.set_option(self.instance, name, value)

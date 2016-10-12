@@ -1,4 +1,4 @@
 # pyevmjit 
 
-Python  for [evmjit](https://github.com/ethereum/evmjit)
+Python FFI bindings for [evmjit](https://github.com/ethereum/evmjit)
 (a library for just-in-time compilation of Ethereum EVM code).
